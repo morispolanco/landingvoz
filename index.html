@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VozAInforme - Convierte Audios en Informes Profesionales | Solución para Agentes de Seguridad</title>
-    <meta name="description" content="VozAInforme: Herramienta profesional que convierte grabaciones de voz en informes escritos para agentes de seguridad privada. Ahorra tiempo y mejora la calidad de tus reportes.">
-    <meta name="keywords" content="informes de seguridad, transcripción de voz a texto, agentes de seguridad privada, reportes de seguridad, software de transcripción, VozAInforme">
+    <title>VoiceAReport - Convert Audio to Professional Reports | Solution for Security Guards</title>
+    <meta name="description" content="VoiceAReport: Professional tool that converts voice recordings into written reports for private security guards. Save time and improve the quality of your reports.">
+    <meta name="keywords" content="security reports, voice to text transcription, private security guards, security reports, transcription software, VoiceAReport">
     <meta name="robots" content="index, follow">
-    <meta property="og:title" content="VozAInforme - Convierte Audios en Informes Profesionales">
-    <meta property="og:description" content="Solución profesional para convertir grabaciones de voz en informes escritos. Ideal para agentes de seguridad privada.">
+    <meta property="og:title" content="VoiceAReport - Convert Audio to Professional Reports">
+    <meta property="og:description" content="Professional solution to convert voice recordings into written reports. Ideal for private security guards.">
     <meta property="og:image" content="images/secuity-agent.jpg">
     <meta property="og:url" content="https://vozainforme.online/">
     <meta property="og:type" content="website">
@@ -17,20 +17,22 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="translations.js" defer></script>
 </head>
 <body>
     <header class="header">
         <div class="container">
             <div class="logo">
-                <h1>VozAInforme</h1>
+                <h1>VoiceAReport</h1>
             </div>
             <nav class="nav">
                 <ul>
-                    <li><a href="#features">Características</a></li>
-                    <li><a href="#benefits">Beneficios</a></li>
-                    <li><a href="#how-it-works">Cómo Funciona</a></li>
-                    <li><a href="#pricing">Precios</a></li>
+                    <li><a href="#features" data-i18n="features">Features</a></li>
+                    <li><a href="#benefits" data-i18n="benefits">Benefits</a></li>
+                    <li><a href="#how-it-works" data-i18n="howItWorks">How It Works</a></li>
+                    <li><a href="#pricing" data-i18n="pricing">Pricing</a></li>
                 </ul>
+                <button onclick="toggleLanguage()" class="lang-toggle">EN/ES</button>
             </nav>
         </div>
     </header>
@@ -39,15 +41,15 @@
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1>Convierte Audios en Informes Profesionales en Segundos 🎙️📄</h1>
-                <p>VozAInforme es la solución ideal para agentes de seguridad privada que necesitan redactar informes claros y profesionales sin complicaciones.</p>
+                <h1 data-i18n="heroTitle">Convert Audio to Professional Reports in Seconds 🎙️📄</h1>
+                <p data-i18n="heroDescription">VoiceAReport is the ideal solution for private security guards who need to write clear and professional reports without complications.</p>
                 <div class="cta-buttons">
-                    <a href="https://vozainforme.online/" class="btn btn-primary">Prueba Ahora</a>
-                    <a href="https://vozainforme.online/contacto" class="btn btn-secondary">Solicitar Demostración</a>
+                    <a href="https://vozainforme.online/" class="btn btn-primary" data-i18n="tryNow">Try Now</a>
+                    <a href="https://vozainforme.online/contacto" class="btn btn-secondary" data-i18n="requestDemo">Request Demo</a>
                 </div>
             </div>
             <div class="hero-image">
-                <img src="images/secuity-agent.jpg" alt="Agente de seguridad usando VozAInforme en su smartphone">
+                <img src="images/secuity-agent.jpg" alt="Security guard using VoiceAReport on their smartphone">
             </div>
         </div>
     </section>
@@ -55,71 +57,63 @@
     <!-- Problem Section -->
     <section class="problem" id="problem">
         <div class="container">
-            <h2>¿Tu Equipo Tiene Dificultades para Redactar Informes?</h2>
-            <p>Muchos agentes de seguridad privada enfrentan desafíos al documentar sus actividades debido a:</p>
+            <h2>Does Your Team Struggle with Writing Reports?</h2>
+            <p>Many private security guards face challenges when documenting their activities due to:</p>
             <div class="problem-items">
                 <div class="problem-item">
                     <div class="icon">
                         <i class="fas fa-pencil-alt"></i>
                     </div>
-                    <h3>Falta de formación académica</h3>
-                    <p>Dificultad para redactar de manera profesional y clara.</p>
+                    <h3>Lack of Academic Training</h3>
+                    <p>Difficulty writing in a professional and clear manner.</p>
                 </div>
                 <div class="problem-item">
                     <div class="icon">
                         <i class="fas fa-clock"></i>
                     </div>
-                    <h3>Pérdida de tiempo valioso</h3>
-                    <p>Horas dedicadas a tareas manuales que podrían optimizarse.</p>
+                    <h3>Loss of Valuable Time</h3>
+                    <p>Hours spent on manual tasks that could be optimized.</p>
                 </div>
                 <div class="problem-item">
                     <div class="icon">
                         <i class="fas fa-exclamation-triangle"></i>
                     </div>
-                    <h3>Informes inconsistentes</h3>
-                    <p>Errores que afectan la calidad y profesionalismo del trabajo.</p>
+                    <h3>Inconsistent Reports</h3>
+                    <p>Errors that affect the quality and professionalism of work.</p>
                 </div>
             </div>
-            <p class="problem-conclusion">En VozAInforme entendemos estos problemas y hemos creado una solución simple y efectiva.</p>
         </div>
     </section>
 
     <!-- Features Section -->
     <section class="features" id="features">
         <div class="container">
-            <h2>Con VozAInforme, Todo es Más Fácil</h2>
+            <h2>Smart Features for Your Team</h2>
             <div class="features-grid">
                 <div class="feature-item">
                     <div class="feature-icon">
                         <i class="fas fa-microphone"></i>
                     </div>
-                    <h3>Grabación Simple</h3>
-                    <p>Solo habla y deja que la tecnología haga el trabajo.</p>
+                    <h3>Voice Recording</h3>
+                    <p>Record your report naturally using your voice, without typing.</p>
                 </div>
                 <div class="feature-item">
                     <div class="feature-icon">
                         <i class="fas fa-magic"></i>
                     </div>
-                    <h3>Generación Automática</h3>
-                    <p>Convierte audios en informes estructurados y profesionales.</p>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-icon">
-                        <i class="fas fa-mobile-alt"></i>
-                    </div>
-                    <h3>Multiplataforma</h3>
-                    <p>Funciona en dispositivos móviles y entornos web.</p>
+                    <h3>AI Processing</h3>
+                    <p>Our AI transforms your voice into clear, professional text.</p>
                 </div>
                 <div class="feature-item">
                     <div class="feature-icon">
                         <i class="fas fa-copy"></i>
                     </div>
-                    <h3>Fácil Integración</h3>
-                    <p>Copia el informe generado y pégalo en cualquier correo electrónico o sistema interno.</p>
+                    <h3>Easy Integration</h3>
+                    <p>Copy the generated report and paste it into any email or internal system.</p>
                 </div>
             </div>
             <div class="feature-showcase">
-                <img src="images/app-screenshot.png" alt="Interfaz de VozAInforme">
+                <img src="images/app-screenshot.png" alt="VoiceAReport Interface">
             </div>
         </div>
     </section>
@@ -127,39 +121,39 @@
     <!-- Benefits Section -->
     <section class="benefits" id="benefits">
         <div class="container">
-            <h2>¿Por Qué Elegir VozAInforme?</h2>
+            <h2>Why Choose VoiceAReport?</h2>
             <div class="benefits-grid">
                 <div class="benefit-item">
                     <div class="benefit-icon">
                         <i class="fas fa-hourglass-half"></i>
                     </div>
-                    <h3>Ahorra Tiempo</h3>
-                    <p>Reduce significativamente el tiempo dedicado a la redacción manual de informes.</p>
-                    <div class="benefit-stat">80% menos tiempo</div>
+                    <h3>Save Time</h3>
+                    <p>Significantly reduce time spent on manual report writing.</p>
+                    <div class="benefit-stat">80% less time</div>
                 </div>
                 <div class="benefit-item">
                     <div class="benefit-icon">
                         <i class="fas fa-check-circle"></i>
                     </div>
-                    <h3>Mejora la Calidad</h3>
-                    <p>Garantiza informes consistentes y libres de errores comunes.</p>
-                    <div class="benefit-stat">95% menos errores</div>
+                    <h3>Improve Quality</h3>
+                    <p>Ensure consistent reports free of common errors.</p>
+                    <div class="benefit-stat">95% fewer errors</div>
                 </div>
                 <div class="benefit-item">
                     <div class="benefit-icon">
                         <i class="fas fa-chart-line"></i>
                     </div>
-                    <h3>Escalabilidad</h3>
-                    <p>Ideal para equipos pequeños o grandes empresas de seguridad privada.</p>
-                    <div class="benefit-stat">Adaptable a cualquier tamaño</div>
+                    <h3>Scalability</h3>
+                    <p>Ideal for small teams or large security companies.</p>
+                    <div class="benefit-stat">Adaptable to any size</div>
                 </div>
                 <div class="benefit-item">
                     <div class="benefit-icon">
                         <i class="fas fa-users"></i>
                     </div>
-                    <h3>Accesible para Todos</h3>
-                    <p>Diseñada para ser intuitiva, incluso para usuarios con poca experiencia tecnológica.</p>
-                    <div class="benefit-stat">Curva de aprendizaje mínima</div>
+                    <h3>Accessible for Everyone</h3>
+                    <p>Designed to be intuitive, even for users with limited tech experience.</p>
+                    <div class="benefit-stat">Minimal learning curve</div>
                 </div>
             </div>
         </div>
@@ -168,15 +162,15 @@
     <!-- How It Works Section -->
     <section class="how-it-works" id="how-it-works">
         <div class="container">
-            <h2>¿Cómo Funciona VozAInforme?</h2>
+            <h2>How Does VoiceAReport Work?</h2>
             <div class="steps">
                 <div class="step">
                     <div class="step-number">1</div>
                     <div class="step-icon">
                         <i class="fas fa-microphone-alt"></i>
                     </div>
-                    <h3>Graba</h3>
-                    <p>El agente graba su informe verbalmente usando su dispositivo móvil o computadora.</p>
+                    <h3>Record</h3>
+                    <p>The guard records their report verbally using their mobile device or computer.</p>
                 </div>
                 <div class="step-connector"></div>
                 <div class="step">
@@ -184,8 +178,8 @@
                     <div class="step-icon">
                         <i class="fas fa-cogs"></i>
                     </div>
-                    <h3>Procesa</h3>
-                    <p>La aplicación convierte el audio en un informe escrito claro y profesional.</p>
+                    <h3>Process</h3>
+                    <p>The application converts the audio into a clear and professional written report.</p>
                 </div>
                 <div class="step-connector"></div>
                 <div class="step">
@@ -193,8 +187,8 @@
                     <div class="step-icon">
                         <i class="fas fa-share-alt"></i>
                     </div>
-                    <h3>Comparte</h3>
-                    <p>Copia el informe generado y pégalo en un correo electrónico o sistema interno.</p>
+                    <h3>Share</h3>
+                    <p>Copy the generated report and paste it into an email or internal system.</p>
                 </div>
             </div>
         </div>
@@ -203,74 +197,56 @@
     <!-- Pricing Section -->
     <section class="pricing" id="pricing">
         <div class="container">
-            <h2>Planes Flexibles para Cualquier Necesidad</h2>
+            <h2>Flexible Plans for Any Need</h2>
             <div class="pricing-grid">
                 <div class="pricing-card">
                     <div class="pricing-header">
-                        <h3>Plan Básico</h3>
-                        <div class="price">$5<span>/mes por agente</span></div>
+                        <h3>Basic Plan</h3>
+                        <div class="price">$5<span>/month per guard</span></div>
                     </div>
                     <div class="pricing-features">
                         <ul>
-                            <li><i class="fas fa-check"></i> Hasta 50 informes mensuales</li>
-                            <li><i class="fas fa-check"></i> Acceso móvil y web</li>
-                            <li><i class="fas fa-check"></i> Soporte por email</li>
-                            <li><i class="fas fa-check"></i> Exportación a texto</li>
+                            <li><i class="fas fa-check"></i> Up to 50 monthly reports</li>
+                            <li><i class="fas fa-check"></i> Mobile and web access</li>
+                            <li><i class="fas fa-check"></i> Email support</li>
+                            <li><i class="fas fa-check"></i> Text export</li>
                         </ul>
                     </div>
                     <div class="pricing-cta">
-                        <a href="https://vozainforme.online/" class="btn btn-primary">Suscribirse Ahora</a>
+                        <a href="https://vozainforme.online/" class="btn btn-primary">Subscribe Now</a>
                     </div>
                 </div>
                 <div class="pricing-card featured">
                     <div class="pricing-header">
-                        <h3>Plan Empresarial</h3>
-                        <div class="price">Personalizado</div>
+                        <h3>Enterprise Plan</h3>
+                        <div class="price">Custom</div>
                     </div>
                     <div class="pricing-features">
                         <ul>
-                            <li><i class="fas fa-check"></i> Informes ilimitados</li>
-                            <li><i class="fas fa-check"></i> Acceso móvil y web</li>
-                            <li><i class="fas fa-check"></i> Soporte prioritario 24/7</li>
-                            <li><i class="fas fa-check"></i> Exportación a múltiples formatos</li>
-                            <li><i class="fas fa-check"></i> Integración con sistemas internos</li>
-                            <li><i class="fas fa-check"></i> Descuentos por volumen</li>
+                            <li><i class="fas fa-check"></i> Unlimited reports</li>
+                            <li><i class="fas fa-check"></i> Mobile and web access</li>
+                            <li><i class="fas fa-check"></i> 24/7 priority support</li>
+                            <li><i class="fas fa-check"></i> Export to multiple formats</li>
+                            <li><i class="fas fa-check"></i> Integration with internal systems</li>
+                            <li><i class="fas fa-check"></i> Volume discounts</li>
                         </ul>
                     </div>
                     <div class="pricing-cta">
-                        <a href="https://vozainforme.online/contacto" class="btn btn-secondary">Solicitar Cotización</a>
-                    </div>
-                </div>
-                <div class="pricing-card">
-                    <div class="pricing-header">
-                        <h3>Demostración Gratuita</h3>
-                        <div class="price">$0<span>/14 días</span></div>
-                    </div>
-                    <div class="pricing-features">
-                        <ul>
-                            <li><i class="fas fa-check"></i> 10 informes de prueba</li>
-                            <li><i class="fas fa-check"></i> Acceso móvil y web</li>
-                            <li><i class="fas fa-check"></i> Soporte básico</li>
-                            <li><i class="fas fa-check"></i> Sin compromiso</li>
-                        </ul>
-                    </div>
-                    <div class="pricing-cta">
-                        <a href="https://vozainforme.online/" class="btn btn-primary">Probar Gratis</a>
+                        <a href="https://vozainforme.online/contacto" class="btn btn-primary">Contact Sales</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-
     <!-- Final CTA Section -->
-    <section class="final-cta" id="final-cta">
+    <section class="final-cta">
         <div class="container">
-            <h2>¡Optimiza la Gestión de Informes de Tu Equipo Hoy Mismo!</h2>
-            <p>No pierdas más tiempo ni recursos en procesos manuales. VozAInforme es la herramienta que tu equipo necesita para ser más eficiente y profesional.</p>
+            <h2 data-i18n="readyToTransform">Ready to Transform Your Reporting Process?</h2>
+            <p data-i18n="dontWaste">Don't waste more time and resources on manual processes. VoiceAReport is the tool your team needs to be more efficient and professional.</p>
             <div class="cta-buttons">
-                <a href="https://vozainforme.online/" class="btn btn-primary">Prueba Gratis Ahora</a>
-                <a href="https://vozainforme.online/contacto" class="btn btn-secondary">Contáctanos</a>
+                <a href="https://vozainforme.online/" class="btn btn-primary" data-i18n="tryFreeNow">Try Free Now</a>
+                <a href="https://vozainforme.online/contacto" class="btn btn-secondary" data-i18n="contactUs">Contact Us</a>
             </div>
         </div>
     </section>
@@ -280,38 +256,29 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-column">
-                    <h3>VozAInforme</h3>
-                    <p>Transformando la manera en que los agentes de seguridad documentan su trabajo diario.</p>
-                    <p>Tu información está segura con nosotros. No compartimos datos con terceros.</p>
+                    <h3>VoiceAReport</h3>
+                    <p data-i18n="footerDescription">Transforming the way security guards document their daily work.</p>
+                    <p data-i18n="footerPrivacy">Your information is safe with us. We don't share data with third parties.</p>
                 </div>
                 <div class="footer-column">
-                    <h3>Enlaces Útiles</h3>
+                    <h3>Useful Links</h3>
                     <ul>
-                        <li><a href="#">Sobre Nosotros</a></li>
-                        <li><a href="https://vozainforme.online/contacto">Contacto</a></li>
-                        <li><a href="#">Términos y Condiciones</a></li>
-                        <li><a href="#">Política de Privacidad</a></li>
+                        <li><a href="#" data-i18n="aboutUs">About Us</a></li>
+                        <li><a href="https://vozainforme.online/contacto" data-i18n="contact">Contact</a></li>
+                        <li><a href="#" data-i18n="termsConditions">Terms and Conditions</a></li>
+                        <li><a href="#" data-i18n="privacyPolicy">Privacy Policy</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
-                    <h3>Contacto</h3>
+                    <h3>Contact</h3>
                     <ul>
-                        <li><i class="fas fa-envelope"></i> info@vozainforme.online</li>
-                        <li><i class="fas fa-phone"></i> +502 37648910</li>
+                        <li><i class="fas fa-envelope"></i> support@vozainforme.online</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
                     </ul>
-                </div>
-                <div class="footer-column">
-                    <h3>Síguenos</h3>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2023 VozAInforme. Todos los derechos reservados.</p>
+                <p>&copy; 2024 VoiceAReport. <span data-i18n="allRightsReserved">All rights reserved.</span></p>
             </div>
         </div>
     </footer>
